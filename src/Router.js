@@ -5,6 +5,8 @@ import EmployeeList from './components/EmployeeList';
 import EmployeeCreate from './components/EmployeeCreate';
 import EmployeeEdit from './components/EmployeeEdit';
 
+import Home from './components/Home';
+
 const RouterComponent = () => {
   return (
     <Router style={{ paddingTop: 65 }}>
@@ -14,12 +16,20 @@ const RouterComponent = () => {
         </Scene>
         <Scene key="main">
           <Scene
+          rightTitle="Add"
+          onRight={() => { Actions.employeeCreate()}}
+          key="home"
+          component={Home}
+          title="Credito"
+          initial
+          tabs
+          />
+          <Scene
             rightTitle="Add"
             onRight={() => { Actions.employeeCreate()}}
-            key="employeeList"
+            key="employeeList1"
             component={EmployeeList}
             title="Employees"
-            initial
           />
           <Scene
             key="employeeCreate"
@@ -33,6 +43,8 @@ const RouterComponent = () => {
           />
         </Scene>
       </Scene>
+
+
     </Router>
   );
 };

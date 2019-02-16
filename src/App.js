@@ -15,7 +15,7 @@ class App extends Component {
     const config = {
       apiKey: "AIzaSyDnBqjhg5Ct9__HwfStbd4VaA2UebErCkg",
       authDomain: "manager-62c3f.firebaseapp.com",
-      databaseURL: "https://manager-62c3f.firebaseio.com",
+      databaseURL: "https://credito-62c3f.firebaseio.com",
       projectId: "manager-62c3f",
       storageBucket: "manager-62c3f.appspot.com",
       messagingSenderId: "151289919723"

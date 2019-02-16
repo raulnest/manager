@@ -1,4 +1,4 @@
-package com.manager;
+package com.credito;
 
 import android.app.Application;
 
